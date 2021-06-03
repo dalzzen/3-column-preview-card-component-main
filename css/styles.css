@@ -1,0 +1,121 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+/* mobile desing*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.7;
+    word-spacing: 5px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.main_container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 3.5em 2em;
+}
+
+.card {
+    padding: 3em 2em;
+}
+
+.card h1 {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--very-light-gray);
+}
+
+.card p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--transparent-white);
+}
+
+button {
+    border-radius: 20px;
+    padding: 0.8em 2em;
+    background-color: var(--very-light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+    border-style: none;
+}
+
+.sedans {
+    background-color: var(--bright-orange);
+    border-radius: 15px 15px 0px 0px;
+}
+
+.suvs {
+    background-color: var(--dark-cyan);
+}
+
+.luxury {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0px 0px 15px 15px;
+}
+
+.sedans button {
+    color: var(--bright-orange);
+}
+
+.suvs button {
+    color: var(--dark-cyan);
+}
+
+.luxury button {
+    color: var(--very-dark-cyan);
+}
+
+/* Desktop design*/
+@media only screen and (min-width: 1440px) {
+    .main_container {
+        flex-direction: row;
+        margin: 5em 8em;
+    }
+
+    img {
+        width: 6em;
+    }
+
+    h1 {
+        font-size: 75px;
+    }
+
+    p {
+        font-size: 25px;
+        padding-right: 50px;
+        line-height: 1.5;
+        margin-bottom: 6em;
+        word-spacing: 10px;
+        margin-top: 2em;
+    }
+    button{
+       
+        font-size: 25px;
+        margin-bottom: 2em;
+    }
+    .sedans{
+        border-radius: 15px 0 0 15px;
+    }
+    .luxury{
+        border-radius: 0 15px 15px 0;
+    }
+
+}
